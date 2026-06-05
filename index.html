@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dizdar Architects</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="page-home">
+
+  <header id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Dizdar Architects" /></a>
+      <div style="display:flex;align-items:center;gap:36px;">
+        <nav id="nav">
+          <a href="projeler.html">Projeler</a>
+          <a href="profil.html">Profil</a>
+          <a href="iletisim.html">İletişim</a>
+        </nav>
+        <button class="burger" id="burger" aria-label="Menü"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">&#10005;</button>
+    <nav>
+      <a href="projeler.html" class="mobile-link">Projeler</a>
+      <a href="profil.html"   class="mobile-link">Profil</a>
+      <a href="iletisim.html" class="mobile-link">İletişim</a>
+    </nav>
+  </div>
+
+  <section id="hero">
+    <div class="slideshow">
+      <div class="slide active" style="background-image:url('images/hero-1.jpg')"></div>
+      <div class="slide"        style="background-image:url('images/hero-2.jpg')"></div>
+      <div class="slide"        style="background-image:url('images/hero-3.jpg')"></div>
+      <div class="slide"        style="background-image:url('images/hero-4.jpg')"></div>
+      <div class="slide"        style="background-image:url('images/hero-5.jpg')"></div>
+      <div class="slide"        style="background-image:url('images/hero-6.jpg')"></div>
+      <div class="slide-overlay"></div>
+    </div>
+
+    <div class="hero-text">
+      <p class="hero-sub">Mimarlık &amp; İç Mekan Tasarımı</p>
+      <h1>Mekânı<br><em>yeniden</em><br>hayal etmek.</h1>
+    </div>
+
+    <a href="projeler.html" class="hero-cta">
+      <span>Projeleri Keşfet</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+
+    <div class="slide-counter" id="slideCounter">
+      <span id="slideCurrentNum">01</span>
+      <span class="slide-divider"></span>
+      <span id="slideTotalNum">06</span>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
