@@ -747,6 +747,8 @@ footer p { font-size: 0.6rem; color: var(--mid); letter-spacing: 0.06em; }
 /* ===========================
    RESPONSIVE
 =========================== */
+
+/* ── Tablet ── */
 @media (max-width: 1100px) {
   .projects-grid-jh { grid-template-columns: repeat(2, 1fr); }
   .services-list { grid-template-columns: 1fr; }
@@ -759,36 +761,82 @@ footer p { font-size: 0.6rem; color: var(--mid); letter-spacing: 0.06em; }
 
 @media (max-width: 900px) {
   .header-inner { padding: 0 28px; }
-  .projects-page { padding: 48px 28px 80px; }
-  .profile-content { padding: 60px 28px 80px; }
-  .contact-info-side { padding: 56px 28px 72px; }
-  .project-detail-header { padding: 32px 28px; flex-direction: column; gap: 16px; }
-  .project-gallery { padding: 8px 28px 64px; }
+  .projects-page { padding: 40px 28px 80px; }
+  .profile-content { padding: 56px 28px 80px; }
+  .contact-page { padding: 60px 0 80px; }
+  .contact-info-side { padding: 0 28px; }
+  .project-detail-header { padding: 28px 28px; flex-direction: column; gap: 12px; }
+  .project-gallery { padding: 8px 28px 56px; }
   .project-nav { padding: 24px 28px; }
   footer { padding: 28px; }
 }
 
+/* ── Mobil ── */
 @media (max-width: 768px) {
+  :root { --nav-h: 60px; }
+
+  /* Header */
   #nav { display: none; }
   .burger { display: flex; }
-  .projects-grid-jh { grid-template-columns: 1fr; gap: 36px; }
-  .project-gallery { grid-template-columns: 1fr; }
+  .header-inner { padding: 0 20px; }
+
+  /* Logo boyutu */
+  .logo img { height: 30px; }
+
+  /* Projeler grid — tek sütun */
+  .projects-grid-jh {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 16px;
+  }
+  .projects-page { padding: 32px 20px 64px; }
+
+  /* Proje kartı yazıları daha küçük */
+  .proj-card-title { font-size: 0.55rem; letter-spacing: 0.16em; margin-top: 10px; }
+  .proj-card-sub   { font-size: 0.52rem; margin-top: 3px; }
+
+  /* Proje detay */
+  .project-detail-hero { aspect-ratio: 4/3; }
+  .project-detail-header { padding: 24px 20px; flex-direction: column; gap: 10px; }
+  .project-detail-header h1 { font-size: 1.6rem; }
+  .project-gallery { grid-template-columns: 1fr; padding: 8px 20px 48px; gap: 6px; }
   .project-gallery .g-img.full { grid-column: span 1; }
-  .profile-hero-img { aspect-ratio: 4/3; }
+  .project-nav { padding: 20px; flex-direction: column; gap: 16px; align-items: flex-start; }
+
+  /* Profil */
+  .profile-content { padding: 40px 20px 60px; }
+  .profile-content h1 { font-size: 2.2rem; margin-bottom: 28px; }
+  .profile-lead { font-size: 1.05rem; padding-left: 16px; }
   .profile-stats { flex-direction: column; }
-  .profile-stats div { border-right: none; border-bottom: 1px solid var(--dark-border); padding: 28px 0; }
-  .hero-text { left: 28px; bottom: 84px; }
-  .hero-cta { left: 28px; }
-  .slide-counter { right: 28px; }
+  .profile-stats div { border-right: none; border-bottom: 1px solid var(--light); padding: 24px 0; }
+  .profile-stats strong { font-size: 2.8rem; }
+  .services-list { grid-template-columns: 1fr; }
+
+  /* İletişim */
+  .contact-page { padding: 48px 0 64px; }
+  .contact-info-side { padding: 0 20px; }
+  .contact-info-side h1 { font-size: 2.2rem; }
+  .contact-block { grid-template-columns: 1fr; }
+  .contact-block-item:nth-child(odd) { border-right: none; padding-right: 0; }
+  .contact-block-item:nth-child(even) { padding-left: 0; }
+  .contact-block-item { padding: 24px 0; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-row.full { grid-column: 1; }
+  .btn-send { width: 100%; text-align: center; padding: 16px; }
+
+  /* Footer */
+  footer { padding: 24px 20px; }
+  .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+  .footer-nav { justify-content: center; flex-wrap: wrap; gap: 20px; }
+
+  /* Mobile menü */
+  .mobile-close { right: 24px; top: 20px; }
+  .mobile-link { font-size: 2.4rem; }
 }
 
-@media (max-width: 480px) {
-  .header-inner { padding: 0 20px; }
-  .projects-page { padding: 36px 20px 64px; }
-  .profile-content { padding: 40px 20px 64px; }
-  .contact-info-side { padding: 40px 20px 64px; }
-  footer { padding: 20px; }
-  .footer-inner { flex-direction: column; text-align: center; }
-  .footer-nav { justify-content: center; flex-wrap: wrap; }
-  .mobile-close { right: 20px; }
+/* ── Küçük telefon ── */
+@media (max-width: 420px) {
+  .projects-grid-jh { grid-template-columns: 1fr; gap: 28px; }
+  .proj-card-title { font-size: 0.58rem; letter-spacing: 0.18em; }
+  .contact-block-item a { font-size: 0.82rem; }
+  .profile-content h1 { font-size: 1.9rem; }
 }
