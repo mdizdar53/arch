@@ -194,24 +194,25 @@
 
     /* Tablet */
     @media (max-width: 768px) {
-      .page { padding: 28px 28px; }
-      nav { gap: 24px; }
-      .coming-soon { font-size: clamp(2.4rem, 10vw, 5rem); letter-spacing: 0.18em; margin-bottom: 24px; }
-      .divider { height: 36px; margin-bottom: 22px; }
-      .subtitle { font-size: 0.72rem; margin-bottom: 32px; }
+      .page { padding: 24px 24px; }
+      nav { gap: 20px; }
+      nav a { font-size: 0.58rem; }
+      .coming-soon { font-size: clamp(2.2rem, 10vw, 4rem); letter-spacing: 0.2em; }
+      .logo img { height: 34px; }
+      .tagline { bottom: 28px; left: 24px; font-size: 0.55rem; }
+      .socials { bottom: 28px; right: 24px; }
     }
 
     /* Mobil */
     @media (max-width: 480px) {
-      .page { padding: 24px 20px; }
-      nav { gap: 16px; }
-      nav a { font-size: 0.55rem; letter-spacing: 0.16em; }
-      .coming-soon { font-size: clamp(2rem, 12vw, 3.5rem); letter-spacing: 0.12em; margin-bottom: 20px; }
-      .divider { height: 28px; margin-bottom: 18px; }
-      .subtitle { font-size: 0.68rem; line-height: 1.8; margin-bottom: 28px; }
-      .btn-stay { padding: 13px 36px; font-size: 0.55rem; letter-spacing: 0.28em; }
-      .tagline { display: none; }
-      .logo img { height: 32px; }
+      .page { padding: 20px 20px; }
+      nav { gap: 14px; }
+      nav a { font-size: 0.52rem; letter-spacing: 0.15em; }
+      .coming-soon { font-size: clamp(1.8rem, 11vw, 3rem); letter-spacing: 0.15em; }
+      .logo img { height: 28px; }
+      .tagline { bottom: 24px; left: 20px; font-size: 0.5rem; letter-spacing: 0.22em; }
+      .socials { bottom: 24px; right: 20px; }
+      .socials svg { width: 16px; height: 16px; }
     }
   </style>
 </head>
@@ -240,6 +241,11 @@
         <a href="iletisim.html">Contact</a>
       </nav>
     </header>
+
+    <!-- Orta -->
+    <div class="center">
+      <h1 class="coming-soon">Coming Soon</h1>
+    </div>
 
     <!-- Footer -->
     <footer>
